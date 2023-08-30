@@ -1,0 +1,16 @@
+{% extends "master.html" %} {% load static %}
+
+
+{% block content %}
+
+    <div class="txt3">
+        <h1>{{ mymember.content }}</h1>
+        
+        <p>title: {{ mymember.title }}</p>
+        <p>pub_date: {{ mymember.pub_date }}</p>
+
+        <p>Back to <a href="/">BlogPost</a></p>
+
+    </div>
+
+{% endblock %}

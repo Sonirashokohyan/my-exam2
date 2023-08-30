@@ -1,0 +1,22 @@
+{% extends "master.html" %} {% load static %}
+
+{% block content %}
+        <section class="content">
+            <div class="txt4">
+                {% for x in products %}
+                <h2>{{x.name}}</h2>
+                <p>Description: {{x.description}}</p>
+                <p>price: {{x.price}}</p>
+                {% endfor %}
+
+                <p>Back to <a href="/">BlogPost</a></p>
+            </div>
+
+            <div class="img2">
+                <img src="{% static 'img/cartoon.png'%}" alt="">
+            </div>
+
+        </section>
+        
+   
+{% endblock %}

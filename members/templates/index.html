@@ -1,0 +1,18 @@
+{% extends "master.html" %} {% load static %}
+
+{% block content %}
+    <h1 class="txt">BlogPost</h1>
+      <div class="list">
+        <ul>
+          {% for x in mymembers %}
+            <li><img src="{% static 'img/cartoon.png'%}" alt="" class="img1"> {{ x.title }} {{ x.content }} <a href="/members/details/{{ x.id }}">Details</a></li>
+          {% endfor %}
+        </ul>
+
+      </div>
+
+      <div class="txt2">
+        <h1>To Visit our Products Page <a href="/products/">CLICK HERE</a></h1>
+      </div>
+
+{% endblock %}
